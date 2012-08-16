@@ -7,10 +7,19 @@ namespace depuracao1
 {
     class Program
     {
+        static int Mudar(int m)
+        {
+            m = m + 1;
+            return m;
+        }
         static void Main(string[] args)
         {
+           
             int numero = 0;
-            Console.Write("O numero escolhido é: {0}", numero);
+            numero = int.Parse(Console.ReadLine());
+            Console.WriteLine("O numero escolhido é: {0}", numero);
+            numero = Mudar(numero);
+            Console.WriteLine("O numero modificado é: {0}", numero);
             Console.Read();
 
         }
