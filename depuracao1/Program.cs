@@ -9,6 +9,10 @@ namespace depuracao1
     {
         static void Main(string[] args)
         {
+            int numero = 0;
+            Console.Write("O numero escolhido é: {0}", numero);
+            Console.Read();
+
         }
     }
 }
