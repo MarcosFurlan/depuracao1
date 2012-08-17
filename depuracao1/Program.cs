@@ -34,6 +34,19 @@ namespace depuracao1
                 denominador = int.Parse(Console.ReadLine());
             }
             Console.WriteLine("O quociente entre {0} e {1} é {2}", numero, denominador, Dividir(numero, denominador));
+
+            int[] vetor = new int [3];
+            vetor[0] = int.Parse(Console.ReadLine());
+            vetor[1] = int.Parse(Console.ReadLine());
+            vetor[2] = int.Parse(Console.ReadLine());
+            for (int c = 0; c < vetor.Length; c++)
+                Console.Write("{0}", vetor[c]);
+           
+          /*  int[] v = null ;
+            string n2 = "Nada" + v[0];
+           Aqui acontece uma exceção por tentar acessar valor nulo
+           */
+
             Console.Read();
 
 
